@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container img {
+    margin-left: 20px;
+    width: calc(120px + 4vw);
+    height: auto;
+}
+
+.log-span{
+    margin-bottom: 5px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.ion ion-icon {
+    font-size: calc(20px + 0.8vw);
+    margin-right: 8px;
+    color: rgb(26, 26, 26);
+}
+
+.username a {
+    color: black;
+    text-decoration: none;
+    font-size: calc(12.5px + 0.2vw);
+    
+}
+
+.username a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.banner-container img {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    padding: 20px;
+}
+
+.brand-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    margin: 20px auto;
+}
+
+.brand-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.brand-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: "Anton SC", sans-serif;
+}
+
+.brand-content p {
+    margin-bottom: 10px;
+}
+
+.image-animation-div {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: right;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-shoes-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.image-animation-div span {
+    font-size: calc(5.5rem + 4.5vw);
+    padding: 0;
+    position: absolute;
+    bottom: calc(200px - 10vw);
+    color: white;
+    font-family: "Anton SC", serif;
+    font-style: italic;
+    left: -100%;
+    transition: left 0.4s ease;
+    cursor: pointer;
+}
+
+.image-animation-div:hover span{
+    left: 2vw;
+}
+

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 211, 211);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    color: black;
+    box-sizing: border-box;
+}
+
+.second-main {
+    width: 95%;
+    max-width: 600px;
+    padding: 1.5em;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 3em 8em 4em 8em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    overflow: hidden;
+}
+
+.border-title img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.content-container{
+    width: 130%;
+}
+.content{
+    padding-top: 1em;
+}
+.content input[type="password"],[type="email"] {
+    background-color: #d8d8d8;
+    border-radius: 13px;
+    border: none;
+    padding: 0.8em 1.2em;
+    color: #000000;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 450px;
+    outline: none;
+}
+
+.content li {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.alert{
+    color: rgb(240, 7, 7);
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0;
+}
+
+.content span {
+    float: left;
+}
+
+
+.lable-check-box {
+    display: flex;
+    align-items: center;
+
+}
+
+.lable-check-box > span {
+    font-size: 16px;
+    color: rgb(20, 20, 20);
+    margin-bottom: -17px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.lable-check-box.active{
+    animation: vibrate 0.5s;
+    animation-iteration-count: 1;
+}
+.submit-button {
+    background-color: #54a3fe;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 12px 35px;
+    margin-top: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.submit-button{
+    margin-top: 15%;
+}
+@media (max-width: 768px) {
+    .second-main {
+        width: 85%;
+        margin-left: 8%;
+    }
+
+    .border {
+        padding: 2.5em;
+        border-radius: 28px;
+    }
+
+    .content-container{
+        width: 90%;
+    }
+
+    .content input{
+        font-size: 1rem;
+        padding: 1em;
+
+    }
+
+    .submit-button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}
+
+
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); } 
+    75% { transform: translateX(-5px); } 
+    100% { transform: translateX(0); } 
+}
